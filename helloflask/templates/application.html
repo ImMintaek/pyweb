@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>My Travel New</title>
+  <title>Melon Top 100</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -27,7 +27,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-          <strong class="blue-text">TravelMagazine</strong>
+          <strong class="blue-text">Top100</strong>
         </a>
 
         <!-- Collapse -->
@@ -47,7 +47,7 @@
               </a>
             </li>
             <!-- <li class="nav-item">
-              <a class="nav-link waves-effect" href="#travel_news" >TravelNews</a>
+              <a class="nav-link waves-effect" href="#magazine">About Music</a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
@@ -61,30 +61,36 @@
 
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
-            <!-- <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-facebook-f"></i>
+            <li class="nav-item">
+              <a href="#" id="btnSignin" class="nav-link waves-effect" data-toggle="modal" data-target="#exampleModal">
+                <i class="fas fa-sign-in-alt"></i>Sign-In
               </a>
             </li>
+
             <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fas fa-user"></i>홍길동
+              </a>
+            </li>
+            <!-- <li class="nav-item">
               <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="#" id="singin" class="nav-link waves-effect" data-toggle="modal" data-target="#basicExampleModal">
                 <i class="fas fa-sign-in-alt"></i>SingIN
               </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
                 <i class="fas fa-user"></i>박문수
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a href="https://github.com/ljkyp/travelmagazine" class="nav-link border border-light rounded waves-effect"
+              <a href="https://github.com/kurenara/pyweb" class="nav-link border border-light rounded waves-effect"
                 target="_blank">
-                <i class="fab fa-github mr-2"></i>travelmagazine GitHub
+                <i class="fab fa-github mr-2"></i>Im_MinT GitHub
               </a>
             </li>
           </ul>
@@ -96,378 +102,15 @@
 
   </header>
   <!--Main Navigation-->
-
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><strong><i class="fas fa-sign-in-alt"></i>&nbsp;Sing In</strong></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Default form login -->
-      <form class="text-center border border-light p-5" action="#!">
-
-        <p class="h4 mb-4"><strong>Sign in</strong></p>
-
-        <!-- Email -->
-        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-        <!-- Password -->
-        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-
-        <div class="d-flex justify-content-around">
-            <div>
-                <!-- Remember me -->
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                </div>
-            </div>
-            <div>
-                <!-- Forgot password -->
-                <a href="">Forgot password?</a>
-            </div>
-        </div>
-
-        <!-- Sign in button -->
-        <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
-
-        <!-- Register -->
-        <p>Not a member?
-            <a href="">Register</a>
-        </p>
-
-      </form>
-      <!-- Default form login -->
-      </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
-    </div>
-  </div>
-</div>
   
   <!--Main layout-->
   <main class="mt-5 pt-5">
     <div class="container">
 
-      <!--Section: Jumbotron-->
-      <section class="card wow fadeIn" style="background-image: url(img/main/home-1110.jpg);">
+      <!-- <hr class="my-5"> -->
+      {% block main %}
+      {% endblock %}
 
-        <!-- Content -->
-        <div class="card-body text-white text-center py-2 px-5 my-5">
-          <p class="mb-2 red-text" style="font-size:4em;";>
-            <strong>TRAVEL NEWS</strong>
-          </p>
-          <br><br>
-          <p>
-            <h3 class="mb-4 purple-text" style="text-shadow: 2px 2px 5px white;">
-             <strong>Beautiful and Best Resort</strong>
-            </h3>
-          </p>
-          <p class="mb-4">
-            <h2 class="mb-4">
-             <strong>顧客が望む最高のリゾートを紹介して差し上げる<br>TRAVELニュースへようこそ。</strong>
-            </h2>
-          </p>
-
-        </div>
-        <!-- Content -->
-      </section>
-      <!--Section: Jumbotron-->
-
-      <hr class="my-5">
-
-      <!--Section: Magazine v.1-->
-      <section id="travel_news" class="wow fadeIn">
-
-        <!--Section heading-->
-        <h2 class="h1 text-center my-5 font-weight-bold">Recommended travel products</h2>
-
-        <!--Grid row-->
-        <div class="row text-left">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-            <!--Image-->
-            <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="news-data">
-              <a href="" class="light-blue-text">
-                <h6>
-                  <i class="fas fa-plane"></i>
-                  <strong> Recommanded</strong>
-                </h6>
-              </a>
-              <p>
-                <strong>
-                  <i class="far fa-clock"></i> 2020/10/01</strong>
-              </p>
-            </div>
-            <h3>
-              <a>
-                <strong>Recommanded of Traveler</strong>
-              </a>
-            </h3>
-            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-            </p>
-
-            <!--/Featured news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-2">
-                <h1 class="text-success">1</h1>
-              </div>
-              <div class="col-md-2">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-8">
-                <p class="dark-grey-text">
-                  <strong>하와이 4박5일</strong>-JTB 
-                </p>
-                <a><small class="text-muteted"><i class="fas fa-map-marker-alt"></i>가족 여행 및 연인과의 추억 만들기</small>
-                  <i class="fas fa-angle-left float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><i class="far fa-thumbs-up"></i><small class="text-mute">Asia, Hawai</small>
-                                              <strong class="float-right">가족, 단체여행</strong></li>
-                  <li class="list-group-item"><i class="far fa-thumbs-up"></i>
-                                              <strong class="float-right">가족, 단체여행</strong></li>
-                  <li class="list-group-item"><i class="far fa-thumbs-up"></i>
-                                              <strong class="float-right">가족, 단체여행</strong></li>
-                </ul>
-              </div>
-            </div>
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/54.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>18/08/2018</strong>
-                </p>
-                <a>Soluta nobis est eligendi
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>17/08/2018</strong>
-                </p>
-                <a>Voluptatem accusantium doloremque
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-            <!--Image-->
-            <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Others/images/32.jpg" class="img-fluid" alt="Sample post image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="news-data">
-              <a href="" class="light-blue-text">
-                <h6>
-                  <i class="fas fa-plane-departure"></i>
-                  <strong> Best</strong>
-                </h6>
-              </a>
-              <p>
-                <strong>
-                  <i class="far fa-clock"></i> 2020/10/01</strong>
-              </p>
-
-            </div>
-            <h3>
-              <a>
-                <strong>Best products of season</strong>
-              </a>
-            </h3>
-            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-            </p>
-
-            <!--/Featured news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-2">
-                <h1 class="text-success">999</h1>
-              </div>
-              <div class="col-md-2">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/photo11.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-8">
-                <p class="dark-grey-text">
-                  <strong>19/08/2018</strong>
-                </p>
-                <a>Lorem ipsum dolor sit amet
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/51.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>18/08/2018</strong>
-                </p>
-                <a>Soluta nobis est eligendi
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/44.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>17/08/2018</strong>
-                </p>
-                <a>Voluptatem accusantium doloremque
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-          </div>
-          <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-      </section>
-      <!--/Section: Magazine v.1-->
 
 
     </div>
@@ -538,6 +181,63 @@
   </footer>
   <!--/.Footer-->
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel"><strong><i class="fas fa-sign-in-alt"></i> Sign In</strong></h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p class="h4 mb-4 text-center"><strong>Sign In</strong></p>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form2Example1" class="form-control" placeholder="E-mail"/>
+              <label class="form-label" for="form2Example1"></label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form2Example2" class="form-control" placeholder="Password"/>
+              <label class="form-label" for="form2Example2"></label>
+            </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example34" />
+                  <label class="form-check-label" for="form2Example34"> Remember me </label>
+                </div>
+              </div>
+          
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+          
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#!">Register</a></p>
+
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+      </div>
+    </div>
+  </div>
+
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -552,7 +252,7 @@
     // Animations initialization
     new WOW().init();
 
-    $('#basicExampleModal').modal('show');
+    <!-- $('#exampleModal').modal('show'); -->
 
   </script>
 </body>
